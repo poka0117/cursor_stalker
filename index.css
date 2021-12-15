@@ -1,0 +1,39 @@
+body{
+    position: relative;
+    cursor: none;
+    height: 100vh;
+}
+#cursor{
+    position: absolute;
+    background: rgb(95, 91, 91);
+    border-radius:10px;
+    width: 20px;
+    height: 20px;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    margin: -10px 0 0 -10px
+}
+
+#stalker{
+    position: absolute;
+    /*丸の大きさと色の指定*/
+    background: rgb(29, 29, 110);
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    z-index: 9999;/*カーソルの後ろに来るように*/
+    pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+    opacity: 0;
+    margin: -30px 0 0 -30px
+  }
+
+  .button{
+      width: 100px;
+      padding: 10px 0;
+      border: solid black 1px;
+      text-align: center;
+  }
+  .button:hover{
+      background-color: chocolate;
+  }
